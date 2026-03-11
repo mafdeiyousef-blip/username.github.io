@@ -1,49 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sarah Emil | Graphic Designer</title>
 
 <style>
+
 body{
-font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
-text-align:center;
+font-family:Arial;
+background:#0f172a;
+color:white;
 }
 
 header{
-background:#111;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#020617;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#a855f7;
+}
+
+nav a{
 color:white;
-padding:40px;
+margin-left:20px;
+text-decoration:none;
 }
 
-section{
-padding:40px;
+.hero{
+text-align:center;
+padding:120px 20px;
 }
 
-.button{
-display:inline-block;
+.hero h1{
+font-size:52px;
+}
+
+.hero p{
+color:#cbd5f5;
+}
+
+.btn{
+background:#a855f7;
 padding:12px 25px;
-background:#ff4d5a;
+border-radius:6px;
 color:white;
 text-decoration:none;
-border-radius:6px;
-font-size:18px;
+display:inline-block;
 margin-top:20px;
 }
 
-.button:hover{
-background:#e63b48;
+.section{
+padding:80px 60px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.grid img{
+width:100%;
+border-radius:12px;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.grid img:hover{
+transform:scale(1.05);
+}
+
+video{
+width:100%;
+border-radius:12px;
 }
 
 footer{
-background:#111;
-color:white;
-padding:20px;
-margin-top:40px;
+text-align:center;
+padding:30px;
+background:#020617;
+margin-top:50px;
 }
+
 </style>
 
 </head>
@@ -51,28 +101,86 @@ margin-top:40px;
 <body>
 
 <header>
-<h1>Sarah Emil</h1>
-<p>Graphic Designer</p>
+
+<div class="logo">Sarah Emil</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#designs">Designs</a>
+<a href="#videos">Videos</a>
+<a href="#branding">Branding</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
 </header>
 
-<section>
-<h2>Welcome to My Portfolio</h2>
-<p>I create creative designs including logos, social media posts, and visual branding.</p>
+<section class="hero">
 
-<a class="button" href="https://www.behance.net/sarahemil1" target="_blank">
-View My Work on Behance
+<h1>Graphic Designer</h1>
+
+<p>Creative social media designs, branding, and visual content</p>
+
+<a class="btn" href="https://www.behance.net/sarahemil1">
+View My Behance
 </a>
+
 </section>
 
-<section>
-<h2>Services</h2>
-<p>• Logo Design</p>
-<p>• Social Media Design</p>
-<p>• Posters & Branding</p>
+<section class="section" id="designs">
+
+<h2>Designs</h2>
+
+<div class="grid">
+
+<img src="design1.png">
+<img src="design2.png">
+
+</div>
+
+</section>
+
+<section class="section" id="videos">
+
+<h2>Videos & Reels</h2>
+
+<div class="grid">
+
+<video controls>
+<source src="video1.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<section class="section" id="branding">
+
+<h2>Branding Projects</h2>
+
+<div class="grid">
+
+<img src="brand1.jpg">
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2>Contact Me</h2>
+
+<a class="btn" href="https://www.behance.net/sarahemil1">
+Behance
+</a>
+
 </section>
 
 <footer>
+
 <p>© 2026 Sarah Emil | Graphic Designer</p>
+
 </footer>
 
 </body>
